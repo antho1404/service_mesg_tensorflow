@@ -1,0 +1,29 @@
+name: tensorflow
+sid: com.kaulias.tensorflow
+description: "Description of my service"
+tasks:
+  predict:
+    inputs:
+      model:
+        type: String
+      data:
+        type: Object
+    outputs:
+      succesfull:
+        type: Boolean
+      result:
+        type: Object
+  mobilenet_classify:
+    inputs:
+      data:
+        type: Object
+    outputs:
+      succesfull:
+        type: Boolean
+      result:
+        type: Object
+events:
+  started:
+    data:
+      x:
+        type: Boolean
